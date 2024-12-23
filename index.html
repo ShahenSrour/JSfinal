@@ -6,28 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavascriptTest</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/433cce3012.js" crossorigin="anonymous"></script>
     <script src='script.js' defer></script>
 </head>
 
 <body>
-    <nav>
-        <div class="nav__left">
-            <figure><img class="nav__logo" src="assets/s.png" alt=""></figure>
-            <h1>Java Search</h1>
-        </div>
-        <div class="nav__right">
+    <header>
+        <nav>
+            <div class="nav__left">
+                <figure><img class="nav__logo" src="assets/download.gif" alt=""></figure>
+                <h1>Java Search</h1>
+            </div>
+            <div class="nav__right">
                 <label class="search_label" for="search">Search</label>
                 <input id="search" type="text" onchange="OnSearchChange(event)" placeholder="category">
-                <button class="Submit">Submit</button>
+                <button class="Submit"><a href=#results><span class="white">Submit</span></a></button>
+            </div>
+        </nav>
+    </header>
+    <section class="landing-page">
+        <div class="landing-page-main">
+            <img class="landing-page__left" src="assets/Astros Angry Sticker - Astros Angry Emoji - Discover & Share GIFs.gif" alt="">
+            <div class="landing-page__right" >
+                <h1 class="landing-page__title">GET <span class="yellow">BLOWN!</span></h1>
+                <p class="landing-page__subtitle">by the best emoji dictionary in the <span class="yellow">WORLD!!</span></p>
+            </div>
         </div>
-    </nav>
+        <div class="landing-page-notmain">
+            <a href=#results><h1 class="arrow heartbeat"><i class="fa-solid fa-arrow-down"></i></h1></a>
+        </div>
+    </section>
     <section id="results">
         <section class="card">
             <h1 class="emoji">&#128513;</h1>
-            <h1>emoji name : </h1>
-            <h1>emoji category :</h1>
+            <p>emoji name : </p>
+            <p>emoji category :</p>
         </section>
     </section>
+    <footer>
+        <h1 style="text-align: center; padding: 20px 10px;">© Shahen 2024</h1>
+    </footer>
 </body>
 
 </html>
