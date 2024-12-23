@@ -17,6 +17,10 @@ fetch('https://emojihub.yurace.pro/api/all').then(res => { return res.json() }).
 
 function OnSearchChange(event) {
     let cat = event.target.value
+    if (cat != "smileys-and-people"|| cat != "animals-and-nature"|| cat != "food-and-drink"|| cat != "travel-and-place"|| cat != "activities"|| cat != "objects"|| cat != "symbols"|| cat != "flags") {
+        console.log("error, no valid search results")
+        alert("error, no valid search results")
+    }
     fetch(`https://emojihub.yurace.pro/api/all/category/${cat}`).then(res => { return res.json() }).then(data => {
         console.log(data)
         emojilist.innerHTML = data
